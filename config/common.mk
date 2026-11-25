@@ -266,6 +266,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
 PRODUCT_PRODUCT_PROPERTIES += \
+    dalvik.vm.launchercompilerfilter=speed \
     dalvik.vm.systemuicompilerfilter=speed
 
 ifeq ($(TARGET_BUILD_VARIANT),userdebug)
@@ -290,6 +291,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
+    LineageFrameworksOverlay \
     NetworkStackOverlay \
     PermissionControllerOverlay
 
